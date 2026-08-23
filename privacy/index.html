@@ -22,7 +22,7 @@
   <main class="wrap doc">
     <header class="page-title">
       <h1>隐私政策</h1>
-      <p class="meta">生效日期：2026-08-12 · 最近更新：2026-08-12 · 适用产品：hhmt（iOS）</p>
+      <p class="meta">生效日期：2026-08-23 · 最近更新：2026-08-23 · 适用产品：hhmt（iOS）</p>
       <div class="lang-switch">
         <a class="active" href="./">中文</a>
         <a href="./en.html">English</a>
@@ -46,12 +46,13 @@
     <section>
       <h2>2. 我们如何处理您的数据</h2>
       <p><strong>2.1 本机处理</strong></p>
-      <p>您手动录入的血压读数、通过摄像头扫描电子血压计识别的读数、以及通过指尖 PPG 传感器（摄像头）测得的脉搏数据，
+      <p>您手动录入的血压读数、以及通过指尖 PPG 功能（摄像头）得到的实验性脉搏估算，
         均在您的 iPhone/iPad <strong>本机</strong>完成记录、分析与图表展示。数据<strong>不会</strong>上传至我们运营的云端服务器，
         全部操作可离线进行。</p>
       <p><strong>2.2 数据存储</strong></p>
       <ul>
-        <li>测量记录、用户档案、提醒设置等保存在应用沙盒（Documents 目录）中，随应用保留；</li>
+        <li>健康记录保存在应用受保护的 Application Support/HealthRecords 目录中，记录目录及备份文件已排除 iCloud 备份；</li>
+        <li>语言、外观、提醒及其他偏好保存在本机系统偏好中；</li>
         <li>您主动导出的 PDF 报告会写入您在系统分享面板中选择的目标（文件、AirDrop、邮件、其他 App 等）；</li>
         <li>上述数据<strong>不会</strong>自动同步到我们运营的服务器。</li>
       </ul>
@@ -60,8 +61,8 @@
     <section>
       <h2>3. 权限说明</h2>
       <ul>
-        <li><strong>相机（NSCameraUsageDescription）</strong>：用于 (a) 通过指尖 PPG 传感器测量脉搏；(b) 摄像头 PPG 测量心率以识别读数。仅在您主动使用相应功能时调用；</li>
-        <li><strong>Apple 健康读取（NSPhotoLibraryUsageDescription）</strong>：用于从Apple 健康选择血压计显示屏的照片进行扫描识别。</li>
+        <li><strong>相机（NSCameraUsageDescription）</strong>：仅在您主动使用时，用于通过指尖 PPG 功能进行实验性脉搏估算；</li>
+        <li><strong>Apple 健康（HealthKit）</strong>：在您开启保存开关后，仅用于写入支持的手动记录（心率、血压、血氧、体重和饮水）。应用不读取 HealthKit 历史、不自动同步，也不会把相机 PPG 结果写入 HealthKit。</li>
       </ul>
       <p>上述权限均由 iOS 系统管控，您可以随时在系统「设置」中查看或撤销。相机画面仅用于实时测量/识别，不会被保存或上传。我们不会通过这些权限进行追踪或建立您的身份档案。</p>
     </section>
@@ -72,7 +73,7 @@
         <li>不收集姓名、电话、通讯录、精确地理位置；</li>
         <li>不接入广告或第三方追踪 SDK，不使用 IDFA 做广告追踪；</li>
         <li>无需注册或登录账号即可使用核心功能；</li>
-        <li>您的血压与脉搏数据<strong>不会</strong>离开您的设备（导出/分享由您主动触发并选择目标）。</li>
+        <li>我们不会在服务器接收您的健康记录；如果您主动导出/分享 PDF，iOS 会将其发送到您选择的目标。</li>
       </ul>
     </section>
 
@@ -89,9 +90,9 @@
 
     <section>
       <h2>7. 数据保留与删除</h2>
-      <p>您的测量记录保存在设备本地，保留至您主动删除或卸载应用（以 iOS 系统行为为准）。
+      <p>您的测量记录保存在设备本地，保留至您删除单条记录或卸载应用（以 iOS 系统行为为准）。
         因我们不托管您的健康数据，一般无需向我们提交"删除云端数据"的请求。
-        您可在应用内清除记录；卸载应用将清除应用沙盒内的全部本地数据。
+        当前应用不提供一键清空全部记录；卸载应用将清除其本地数据。
         若您通过邮件联系我们，邮件通信按常规邮件保留实践处理。</p>
     </section>
 

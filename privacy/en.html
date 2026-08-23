@@ -22,7 +22,7 @@
   <main class="wrap doc">
     <header class="page-title">
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective: 2026-08-12 · Last updated: 2026-08-12 · Product: hhmt (iOS)</p>
+      <p class="meta">Effective: 2026-08-23 · Last updated: 2026-08-23 · Product: hhmt (iOS)</p>
       <div class="lang-switch">
         <a href="./">中文</a>
         <a class="active" href="./en.html">English</a>
@@ -48,12 +48,13 @@
       <h2>2. How we handle your data</h2>
       <p><strong>2.1 On-device processing</strong></p>
       <p>Vitals you enter manually (blood pressure, glucose, SpO₂, weight, water, temperature),
-        and pulse / HRV data measured via the fingertip PPG sensor (rear camera + flash) are all recorded, analyzed, and charted
+        and experimental pulse / HRV estimates from the fingertip PPG feature (rear camera + flash) are all recorded, analyzed, and charted
         <strong>on your iPhone/iPad</strong>. Your data is <strong>not</strong> uploaded to cloud servers we operate,
         and the app works fully offline.</p>
       <p><strong>2.2 Data storage</strong></p>
       <ul>
-        <li>Measurement records, user profiles, and reminder settings are stored in the app sandbox (Documents directory) and persist with the app;</li>
+        <li>Health records are stored locally in the app's protected Application Support/HealthRecords directory. The record directory and its backup file are excluded from iCloud backup;</li>
+        <li>Language, appearance, reminder, and other app preferences are stored locally using system preferences;</li>
         <li>PDF reports you actively export are written to a destination you choose via the system share sheet (Files, AirDrop, email, other apps, etc.);</li>
         <li>This data is <strong>not</strong> automatically synced to servers we operate.</li>
       </ul>
@@ -62,8 +63,8 @@
     <section>
       <h2>3. Permissions</h2>
       <ul>
-        <li><strong>Camera (NSCameraUsageDescription)</strong>: used (a) to measure heart rate and PPG pulse waveform via the fingertip sensor (rear camera and flash) — only when you actively use these features;</li>
-        <li><strong>Apple Health (HealthKit)</strong>: used to read and write heart rate, blood pressure, blood glucose, SpO₂, and weight when you enable sync.</li>
+        <li><strong>Camera (NSCameraUsageDescription)</strong>: used for an experimental pulse estimate via the fingertip PPG feature (rear camera and flash) — only when you actively use it;</li>
+        <li><strong>Apple Health (HealthKit)</strong>: used only to write supported manual records (heart rate, blood pressure, oxygen saturation, weight, and water) when you enable saving. The app does not read HealthKit history or automatically sync records. Experimental camera PPG results are not written to HealthKit.</li>
       </ul>
       <p>These permissions are managed by iOS and can be reviewed or revoked anytime in system Settings.
         The camera feed is used only for live measurement/recognition and is not saved or uploaded.
@@ -76,7 +77,7 @@
         <li>No name, phone number, contacts, or precise location;</li>
         <li>No advertising or third-party tracking SDKs / IDFA advertising tracking;</li>
         <li>No sign-in is required for core features;</li>
-        <li>Your heart rate, blood pressure, and other vitals <strong>never</strong> leaves your device (export/share is triggered by you and goes to your chosen destination).</li>
+        <li>We do not receive your health records on our servers. If you export/share a PDF, iOS sends it to the destination you choose.</li>
       </ul>
     </section>
 
@@ -94,9 +95,9 @@
 
     <section>
       <h2>7. Retention &amp; deletion</h2>
-      <p>Your measurement records remain on your device until you delete them or uninstall the app (subject to iOS behavior).
+      <p>Your measurement records remain on your device until you delete individual records or uninstall the app (subject to iOS behavior).
         Because we do not host your health data, there is generally no cloud-data deletion request needed.
-        You can clear records within the app; uninstalling the app removes all local data from the app sandbox.
+        The app currently does not provide a bulk clear-all action; uninstalling the app removes its local data.
         Emails you send us are handled under ordinary email practices.</p>
     </section>
 
